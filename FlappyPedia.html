@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flappy Potato – Wikipedia, wolna encyklopedia</title>
+<style>
+:root{--bg:#fff;--fg:#202122;--mut:#54595d;--link:#0645ad;--line:#a2a9b1;--box:#f8f9fa;--head:#eaecf0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101418;--fg:#eaecf0;--mut:#a2a9b1;--link:#6b9eff;--line:#3a4048;--box:#1a1f25;--head:#27303a}}
+:root[data-theme="dark"]{--bg:#101418;--fg:#eaecf0;--mut:#a2a9b1;--link:#6b9eff;--line:#3a4048;--box:#1a1f25;--head:#27303a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+.top{border-bottom:1px solid var(--line);padding:10px 16px;font-family:Georgia,"Linux Libertine",serif;font-size:20px}
+.top small{color:var(--mut);font-size:12px;font-family:system-ui,sans-serif;margin-left:8px}
+main{max-width:980px;margin:0 auto;padding:16px}
+h1{font:400 28px Georgia,"Linux Libertine",serif;border-bottom:1px solid var(--line);margin:0 0 4px}
+h2{font:400 22px Georgia,"Linux Libertine",serif;border-bottom:1px solid var(--line);margin:28px 0 8px}
+h3{font-size:16px;margin:18px 0 4px}
+a{color:var(--link);text-decoration:none}
+.sub{color:var(--mut);font-size:13px;margin-bottom:12px}
+.info{float:right;width:280px;margin:0 0 16px 20px;border:1px solid var(--line);background:var(--box);font-size:13px;border-collapse:collapse}
+.info th,.info td{padding:5px 8px;vertical-align:top;text-align:left}
+.info caption{background:#ff9800;color:#1b0c02;font-weight:700;padding:8px;font-size:15px}
+.info .emo{font-size:64px;text-align:center;padding:12px}
+.info th{width:38%}
+.toc{display:inline-block;border:1px solid var(--line);background:var(--box);padding:8px 16px;font-size:13px;margin:8px 0}
+.toc ol{margin:4px 0;padding-left:20px}
+.wrap{overflow-x:auto}
+table.w{border-collapse:collapse;margin:8px 0;min-width:100%}
+table.w th,table.w td{border:1px solid var(--line);padding:5px 10px;text-align:left}
+table.w th{background:var(--head)}
+code{background:var(--box);border:1px solid var(--line);padding:0 4px;border-radius:3px;font-size:13px}
+.note{background:var(--box);border-left:4px solid #ff9800;padding:8px 12px;margin:12px 0;font-size:14px}
+footer{border-top:1px solid var(--line);color:var(--mut);font-size:12px;padding:12px 16px;margin-top:30px}
+@media(max-width:640px){.info{float:none;width:100%;margin:0 0 16px}}
+</style>
+</head>
+<body>
+<div class="top">WIKIPEDIA<small>Wolna encyklopedia</small></div>
+<main>
+<h1>Flappy Potato</h1>
+<div class="sub">z Wikipedii, wolnej encyklopedii</div>
+
+<table class="info">
+<caption>Flappy Potato<br><small>Spooky Potato</small></caption>
+<tr><td colspan="2" class="emo">🎃🥔</td></tr>
+<tr><th>Gatunek</th><td>zręcznościowa, endless runner</td></tr>
+<tr><th>Tryby gry</th><td>jednoosobowy; wieloosobowy lokalny (Tryb Berek, LAN)</td></tr>
+<tr><th>Platformy</th><td>Android; iOS 6</td></tr>
+<tr><th>Język programowania</th><td>Kotlin (Android); Objective-C (iOS)</td></tr>
+<tr><th>Interfejs</th><td>Jetpack Compose (Android); UIKit (iOS)</td></tr>
+<tr><th>Identyfikator pakietu</th><td><code>com.example.flappyziemniak</code></td></tr>
+<tr><th>Język interfejsu</th><td>polski</td></tr>
+<tr><th>Sterowanie</th><td>dotyk (jeden przycisk)</td></tr>
+</table>
+
+<p><b>Flappy Potato</b> (w wersji na Androida z motywem halloweenowym również <b>Spooky Potato</b>) – polska gra zręcznościowa inspirowana <i>Flappy Bird</i>, w której gracz steruje ziemniakiem przelatującym między przeszkodami. Gra powstała w dwóch niezależnych wersjach: na system <a href="#">Android</a> oraz – w uproszczonej, klasycznej formie – na <a href="#">iOS 6</a>. Interfejs w obu wersjach jest po polsku.</p>
+
+<div class="toc"><b>Spis treści</b>
+<ol>
+<li><a href="#roz">Rozgrywka</a></li>
+<li><a href="#and">Wersja na Androida</a>
+ <ol><li><a href="#solo">Tryb solo</a></li><li><a href="#berek">Tryb Berek</a></li><li><a href="#sklep">Sklep</a></li><li><a href="#prog">Progresja i zapis</a></li></ol></li>
+<li><a href="#ios">Wersja na iOS 6</a></li>
+<li><a href="#tech">Aspekty techniczne</a></li>
+<li><a href="#por">Porównanie wersji</a></li>
+<li><a href="#cie">Ciekawostki</a></li>
+<li><a href="#zob">Zobacz też</a></li>
+</ol></div>
+
+<h2 id="roz">Rozgrywka</h2>
+<p>Gracz dotyka ekranu, aby nadać ziemniakowi pęd w górę; w pozostałym czasie postać opada pod wpływem grawitacji. Celem jest przelecenie przez szczeliny między parami przeszkód bez zderzenia z nimi, z podłożem lub z krawędzią ekranu. Za każdą minięta przeszkodę gracz otrzymuje jeden punkt. Zderzenie kończy rozgrywkę.</p>
+
+<h2 id="and">Wersja na Androida</h2>
+<p>Wersja androidowa została napisana w języku <a href="#">Kotlin</a> z użyciem biblioteki <a href="#">Jetpack Compose</a> i architektury <i>ViewModel</i>. Ma oprawę wizualną o tematyce halloweenowej: bohaterem jest „dynio-ziemniak” ze świecącymi oczami w stylu <i>jack-o'-lantern</i>, a przeszkody przedstawiają ciemne nagrobki zwieńczone pomarańczowym blaskiem. Postać i dodatki rysowane są programowo na płótnie (<code>Canvas</code>), bez zewnętrznych grafik.</p>
+
+<h3 id="solo">Tryb solo</h3>
+<p>W trybie <i>Graj Solo</i> gracz zbiera punkty za mijane przeszkody. Wartości fizyki w wersji na Androida to m.in. szczelina o wysokości 200 dp, prędkość przesuwu przeszkód 4 dp na klatkę oraz impuls skoku −11 dp. Gra posiada:</p>
+<ul>
+<li>licznik <b>combo</b> (kolejne przeloty bez śmierci) i zapisywany rekord combo,</li>
+<li><b>cukierki</b> 🍬 – waluta przyznawana co 5 punktów,</li>
+<li>zmianę koloru tła zależnie od wyniku: ciemnoszary (do 10 pkt), fioletowy (11–20 pkt) i pomarańczowy (powyżej 20 pkt),</li>
+<li>efekt cząsteczek przy każdym skoku, pauzę oraz dźwięk skoku i muzykę w tle (jeśli dodano pliki <code>jump</code> i <code>music</code> do zasobów),</li>
+<li>możliwość <b>ożywienia</b> po śmierci za 20 cukierków.</li>
+</ul>
+<p>Po przegranej wyświetlany jest ekran z napisem „ZJADŁ CIĘ DUCH”.</p>
+
+<h3 id="berek">Tryb Berek (LAN)</h3>
+<p>Tryb wieloosobowy dla dwóch graczy w jednej sieci lokalnej, nawiązujący do polskiej zabawy w berka. Jeden z graczy jest „berkiem” i musi dotknąć przeciwnika; po zderzeniu role się zmieniają. Berek jest oznaczony czerwoną poświatą, a na ekranie widoczny jest komunikat „JESTEŚ BERKIEM! GONIĆ!” albo „UCIEKAJ!”. Wyjście poza ekran oznacza przegraną.</p>
+<p>Połączenie jest zestawiane automatycznie:</p>
+<ol>
+<li>Gracz wybiera <i>Zostań Hostem</i> – gra losuje czterocyfrowy <b>kod pokoju</b> (1000–9999) i rozgłasza go w sieci pakietami <a href="#">UDP</a> typu broadcast co sekundę na porcie 8889 w formacie <code>FLAPPY:&lt;kod&gt;</code>.</li>
+<li>Drugi gracz wpisuje kod i wybiera <i>Dołącz</i>; aplikacja nasłuchuje rozgłoszeń (limit czasu 4 s), po znalezieniu pasującego kodu odczytuje adres IP hosta.</li>
+<li>Dalsza komunikacja odbywa się przez <a href="#">TCP</a> na porcie 8888 za pomocą prostych komunikatów tekstowych: <code>Y:</code> (pozycja pionowa), <code>SCORE:</code>, <code>COLLISION</code> i <code>DIED</code>.</li>
+</ol>
+
+<h3 id="sklep">Sklep</h3>
+<p>Za zebrane cukierki gracz kupuje w „Mrocznym Sklepie” kosmetyczne dodatki do postaci. Jednocześnie można mieć założony jeden.</p>
+<div class="wrap"><table class="w">
+<tr><th>Przedmiot</th><th>Cena (🍬)</th></tr>
+<tr><td>🎩 Kapelusz</td><td>10</td></tr>
+<tr><td>🕶️ Okulary</td><td>15</td></tr>
+<tr><td>🌯 Kebab</td><td>25</td></tr>
+<tr><td>🥸 Wąsy</td><td>30</td></tr>
+<tr><td>🪖 Wiking</td><td>40</td></tr>
+<tr><td>👑 Korona</td><td>50</td></tr>
+<tr><td>🧣 Peleryna</td><td>60</td></tr>
+<tr><td>👻 Maska Ducha</td><td>70</td></tr>
+</table></div>
+
+<h3 id="prog">Progresja i zapis</h3>
+<p>Wynik rekordowy, najlepsze combo, liczba cukierków, suma zebranych cukierków, posiadane przedmioty i aktualnie założony dodatek zapisywane są lokalnie w <code>SharedPreferences</code>. Menu główne pokazuje statystyki gracza.</p>
+
+<h2 id="ios">Wersja na iOS 6</h2>
+<div class="note" style="border-left-color: #2196F3;">
+<b>📥 Pobieranie:</b> Plik instalacyjny gry <a href="FlappyZiemniakiOS6.ipa" style="font-weight: bold;">FlappyZiemniakiOS6.ipa</a> znajduje się bezpośrednio na serwerze tej strony. Możesz zainstalować go bezpośrednio na swoim i-Urządzeniu. <br>
+<small><i>Wymagania: Urządzenie musi posiadać Jailbreak oraz zainstalowany pakiet <b>AppSync</b> (dostępny z poziomu Cydii), aby umożliwić bezproblemową instalację na systemie iOS 6.</i></small>
+</div>
+
+<p>Wersja na <a href="#">iOS 6</a> została napisana w <a href="#">Objective-C</a> przy użyciu <a href="#">UIKit</a>; cały świat gry jest zbudowany z widoków <code>UIView</code> i etykiet, a pętlę gry (60 klatek/s) napędza <code>CADisplayLink</code>. W odróżnieniu od edycji halloweenowej ma pogodną, klasyczną oprawę: niebieskie niebo, zielone rury z nasadkami, piaszczystą ziemię i dryfujące chmury (emoji ☁️).</p>
+<ul>
+<li><b>Bohater:</b> beżowy ziemniak z oczami, rumieńcem i plamkami; obraca się zależnie od prędkości, a po zderzeniu obraca się o 180°.</li>
+<li><b>Fizyka:</b> grawitacja 0,55, impuls skoku −8,5, szczelina 160 pt, przeszkody pojawiają się co 95 klatek.</li>
+<li><b>Hitbox</b> ziemniaka jest zmniejszony o 6 pt z każdej strony, co łagodzi kolizje.</li>
+<li><b>Rekord</b> („BEST”) jest zapisywany w <code>NSUserDefaults</code> i aktualizowany na bieżąco.</li>
+<li>Gra rozpoczyna się napisem „KLIKNIJ ABY LATAĆ 🥔🔥”, a po przegranej wyświetla „GAME OVER 😔”; dotknięcie ekranu restartuje rozgrywkę.</li>
+<li>Wersja ta nie zawiera sklepu, trybu wieloosobowego ani dźwięku.</li>
+</ul>
+
+<h2 id="tech">Aspekty techniczne</h2>
+<ul>
+<li>Wersja na Androida korzysta z <code>MediaPlayer</code> do muzyki i efektów, z <code>mutableStateListOf</code> do zarządzania przeszkodami i cząsteczkami oraz z pętli opartej na <code>delay(16L)</code>.</li>
+<li>Ruch w obu wersjach jest liczony na klatkę, a nie na czas, więc szybkość gry zależy od stabilności ok. 60 FPS.</li>
+<li>Kod zawiera przygotowany mechanizm tarczy ochronnej (niebieska poświata), który w obecnej postaci nie jest nigdzie aktywowany.</li>
+</ul>
+
+<h2 id="por">Porównanie wersji</h2>
+<div class="wrap"><table class="w">
+<tr><th>Cecha</th><th>Android</th><th>iOS 6</th></tr>
+<tr><td>Język</td><td>Kotlin</td><td>Objective-C</td></tr>
+<tr><td>Interfejs</td><td>Jetpack Compose, Canvas</td><td>UIKit, UIView</td></tr>
+<tr><td>Motyw</td><td>Halloween (Spooky Potato)</td><td>Klasyczny, dzienny</td></tr>
+<tr><td>Szczelina</td><td>200 dp</td><td>160 pt</td></tr>
+<tr><td>Sklep i skórki</td><td>tak (8 przedmiotów)</td><td>nie</td></tr>
+<tr><td>Combo i cukierki</td><td>tak</td><td>nie</td></tr>
+<tr><td>Tryb wieloosobowy</td><td>tak (Berek, LAN)</td><td>nie</td></tr>
+<tr><td>Dźwięk i muzyka</td><td>tak (opcjonalnie)</td><td>nie</td></tr>
+<tr><td>Zapis danych</td><td>SharedPreferences</td><td>NSUserDefaults</td></tr>
+</table></div>
+
+<h2 id="cie">Ciekawostki</h2>
+<ul>
+<li>Nazwa pakietu <code>flappyziemniak</code> pokazuje, że gra pierwotnie nazywała się „Flappy Ziemniak”.</li>
+<li>Do sklepu trafił m.in. kebab – typowy element polskiego humoru internetowego.</li>
+<li>Tryb Berek jest odwołaniem do popularnej w Polsce zabawy w berka (w innych regionach: „w łapanego”).</li>
+</ul>
+
+<div class="note">Ten artykuł został opracowany na podstawie kodu źródłowego gry. Nie zawiera dat premiery ani danych o autorze, ponieważ nie wynikają one z kodu.</div>
+
+<h2 id="zob">Zobacz też</h2>
+<ul><li>Flappy Bird</li><li>Gra zręcznościowa</li><li>Endless runner</li><li>Berek (zabawa)</li></ul>
+</main>
+<footer>Strona ma charakter fanowski i jedynie naśladuje wygląd Wikipedii.</footer>
+</body>
+</html>
