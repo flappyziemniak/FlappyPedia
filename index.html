@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Flappy Potato – Wikipedia, wolna encyklopedia</title>
+<title>Flappy Potato – Oficjalna Strona Gry</title>
 <style>
 :root{--bg:#fff;--fg:#202122;--mut:#54595d;--link:#0645ad;--line:#a2a9b1;--box:#f8f9fa;--head:#eaecf0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101418;--fg:#eaecf0;--mut:#a2a9b1;--link:#6b9eff;--line:#3a4048;--box:#1a1f25;--head:#27303a}}
 :root[data-theme="dark"]{--bg:#101418;--fg:#eaecf0;--mut:#a2a9b1;--link:#6b9eff;--line:#3a4048;--box:#1a1f25;--head:#27303a}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-.top{border-bottom:1px solid var(--line);padding:10px 16px;font-family:Georgia,"Linux Libertine",serif;font-size:20px}
-.top small{color:var(--mut);font-size:12px;font-family:system-ui,sans-serif;margin-left:8px}
+.top{border-bottom:1px solid var(--line);padding:10px 16px;font-family:Georgia,"Linux Libertine",serif;font-size:20px; font-weight:bold; color: #ff9800;}
+.top small{color:var(--mut);font-size:12px;font-family:system-ui,sans-serif;margin-left:8px; font-weight:normal;}
 main{max-width:980px;margin:0 auto;padding:16px}
 h1{font:400 28px Georgia,"Linux Libertine",serif;border-bottom:1px solid var(--line);margin:0 0 4px}
 h2{font:400 22px Georgia,"Linux Libertine",serif;border-bottom:1px solid var(--line);margin:28px 0 8px}
@@ -20,7 +20,7 @@ a{color:var(--link);text-decoration:none}
 .sub{color:var(--mut);font-size:13px;margin-bottom:12px}
 .info{float:right;width:280px;margin:0 0 16px 20px;border:1px solid var(--line);background:var(--box);font-size:13px;border-collapse:collapse}
 .info th,.info td{padding:5px 8px;vertical-align:top;text-align:left}
-.info caption{background:#ff9800;color:#1b0c02;font-weight:700;padding:8px;font-size:15px}
+.info caption{background:#ff5722;color:#fff;font-weight:700;padding:8px;font-size:15px}
 .info .emo{font-size:64px;text-align:center;padding:12px}
 .info th{width:38%}
 .toc{display:inline-block;border:1px solid var(--line);background:var(--box);padding:8px 16px;font-size:13px;margin:8px 0}
@@ -31,21 +31,22 @@ table.w th,table.w td{border:1px solid var(--line);padding:5px 10px;text-align:l
 table.w th{background:var(--head)}
 code{background:var(--box);border:1px solid var(--line);padding:0 4px;border-radius:3px;font-size:13px}
 .note{background:var(--box);border-left:4px solid #ff9800;padding:8px 12px;margin:12px 0;font-size:14px}
-footer{border-top:1px solid var(--line);color:var(--mut);font-size:12px;padding:12px 16px;margin-top:30px}
+.halloween-note{background:#2a1b15; border-left:4px solid #ff5722; color: #fff; padding:8px 12px; margin:12px 0; font-size:14px;}
+footer{border-top:1px solid var(--line);color:var(--mut);font-size:12px;padding:12px 16px;margin-top:30px; text-align:center;}
 @media(max-width:640px){.info{float:none;width:100%;margin:0 0 16px}}
 </style>
 </head>
 <body>
-<div class="top">WIKIPEDIA<small>Wolna encyklopedia</small></div>
+<div class="top">Flappy Potato<small>Oficjalny Portal Gry</small></div>
 <main>
 <h1>Flappy Potato</h1>
-<div class="sub">z Wikipedii, wolnej encyklopedii</div>
+<div class="sub">Baza wiedzy i instrukcje instalacji</div>
 
 <table class="info">
-<caption>Flappy Potato</caption>
-<tr><td colspan="2" class="emo">🥔</td></tr>
+<caption>Flappy Potato (Halloween Edition 🎃)</caption>
+<tr><td colspan="2" class="emo">🥔👻</td></tr>
 <tr><th>Gatunek</th><td>zręcznościowa, endless runner</td></tr>
-<tr><th>Tryby gry</th><td>jednoosobowy</td></tr>
+<tr><th>Wersja</th><td>1.0.1 - Halloween Update</td></tr>
 <tr><th>Platformy</th><td>iOS 6</td></tr>
 <tr><th>Język programowania</th><td>Objective-C</td></tr>
 <tr><th>Interfejs</th><td>UIKit</td></tr>
@@ -54,48 +55,55 @@ footer{border-top:1px solid var(--line);color:var(--mut);font-size:12px;padding:
 <tr><th>Sterowanie</th><td>dotyk (jeden przycisk)</td></tr>
 </table>
 
-<p><b>Flappy Potato</b> – polska gra zręcznościowa inspirowana <i>Flappy Bird</i>, w której gracz steruje ziemniakiem przelatującym między przeszkodami. Gra powstała w klasycznej formie na system <a href="#">iOS 6</a>. Interfejs jest po polsku.</p>
+<p><b>Flappy Potato</b> – polska gra zręcznościowa inspirowana <i>Flappy Bird</i>, w której gracz steruje ziemniakiem przelatującym między przeszkodami. Gra powstała w klasycznej formie na system iOS 6. Obecnie dostępna w limitowanej, halloweenowej oprawie wizualnej!</p>
 
 <div class="toc"><b>Spis treści</b>
 <ol>
 <li><a href="#roz">Rozgrywka</a></li>
-<li><a href="#ios">Wersja na iOS 6</a></li>
+<li><a href="#halloween">Halloween Update 🎃</a></li>
+<li><a href="#ios">Instalacja (PC / Mac)</a></li>
 <li><a href="#tech">Aspekty techniczne</a></li>
-<li><a href="#cie">Ciekawostki</a></li>
 </ol></div>
 
 <h2 id="roz">Rozgrywka</h2>
 <p>Gracz dotyka ekranu, aby nadać ziemniakowi pęd w górę; w pozostałym czasie postać opada pod wpływem grawitacji. Celem jest przelecenie przez szczeliny między parami przeszkód bez zderzenia z nimi, z podłożem lub z krawędzią ekranu. Za każdą minięta przeszkodę gracz otrzymuje jeden punkt. Zderzenie kończy rozgrywkę.</p>
 
-<h2 id="ios">Wersja na iOS 6</h2>
-<div class="note" style="border-left-color: #2196F3;">
-<b>📥 Pobieranie:</b> Plik instalacyjny gry <a href="FlappyZiemniakiOS6.ipa" style="font-weight: bold;">FlappyZiemniakiOS6.ipa</a> znajduje się bezpośrednio na serwerze tej strony. Możesz zainstalować go bezpośrednio na swoim i-Urządzeniu. <br>
-<small><i>Wymagania: Urządzenie musi posiadać Jailbreak oraz zainstalowany pakiet <b>AppSync</b> (dostępny z poziomu Cydii), aby umożliwić bezproblemową instalację na systemie iOS 6.</i></small>
+<h2 id="halloween">Halloween Update 🎃</h2>
+<div class="halloween-note">
+<b>Trwa wydarzenie Halloweenowe!</b> Zmiany w rozgrywce obowiązują przez cały październik.
+</div>
+<p>Z okazji święta duchów, gra otrzymała mroczną i klimatyczną aktualizację. Zmiany obejmują:</p>
+<ul>
+<li><b>Oprawa wizualna:</b> Pogodne niebo zastąpiono krwistoczerwonym, mrocznym tłem. Zamiast białych chmurek (☁️) po niebie dryfują przerażające nietoperze (🦇) i duchy (👻).</li>
+<li><b>Przeszkody:</b> Zielone rury zostały podmienione na kościane filary oraz nagrobki wyrastające z ziemi.</li>
+<li><b>Bohater:</b> Klasyczny ziemniak otrzymał czapkę czarownicy i mroczny rumieniec. </li>
+<li>Gra rozpoczyna się napisem „KLIKNIJ ABY LECIEĆ W MROK 🦇🔥”, a po przegranej wyświetla krwiste „GAME OVER 💀”.</li>
+</ul>
+
+<h2 id="ios">Instalacja przez komputer (PC / Mac)</h2>
+<div class="note" style="border-left-color: #f44336;">
+<b>⚠️ Ważne:</b> Aplikację Flappy Potato można zainstalować <b>WYŁĄCZNIE przy użyciu komputera (PC z Windowsem lub Mac)</b>. Nie ma możliwości pobrania i instalacji pliku wprost z przeglądarki na urządzeniu z systemem iOS!
 </div>
 
-<p>Wersja na <a href="#">iOS 6</a> została napisana w <a href="#">Objective-C</a> przy użyciu <a href="#">UIKit</a>; cały świat gry jest zbudowany z widoków <code>UIView</code> i etykiet, a pętlę gry (60 klatek/s) napędza <code>CADisplayLink</code>. Ma pogodną, klasyczną oprawę: niebieskie niebo, zielone rury z nasadkami, piaszczystą ziemię i dryfujące chmury (emoji ☁️).</p>
-<ul>
-<li><b>Bohater:</b> beżowy ziemniak z oczami, rumieńcem i plamkami; obraca się zależnie od prędkości, a po zderzeniu obraca się o 180°.</li>
-<li><b>Fizyka:</b> grawitacja 0,55, impuls skoku −8,5, szczelina 160 pt, przeszkody pojawiają się co 95 klatek.</li>
-<li><b>Hitbox</b> ziemniaka jest zmniejszony o 6 pt z każdej strony, co łagodzi kolizje.</li>
-<li><b>Rekord</b> („BEST”) jest zapisywany w <code>NSUserDefaults</code> i aktualizowany na bieżąco.</li>
-<li>Gra rozpoczyna się napisem „KLIKNIJ ABY LATAĆ 🥔🔥”, a po przegranej wyświetla „GAME OVER 😔”; dotknięcie ekranu restartuje rozgrywkę.</li>
-</ul>
+<p>Aby zagrać w grę, postępuj zgodnie z poniższym poradnikiem krok po kroku:</p>
+<ol>
+<li>Pobierz plik instalacyjny gry <a href="SpookyZiemniak.ipa" style="font-weight: bold;">FlappyZiemniakiOS6.ipa</a> na dysk swojego komputera.</li>
+<li>Pobierz i zainstaluj na komputerze program do wgrywania aplikacji "z boku" (sideloadingu). Najlepszym wyborem dla iOS 6 będzie <b>Sideloadly</b> lub (jeśli posiadasz system macOS) narzędzia wbudowane w program <b>Apple Configurator</b>. Ewentualnie możesz użyć starszych wersji <b>iTools</b> lub <b>3uTools</b>.</li>
+<li>Podłącz swojego iPhone'a / iPada / iPoda z systemem iOS 6 do komputera za pomocą kabla USB.</li>
+<li>Uruchom program instalacyjny na komputerze (np. Sideloadly). Twoje urządzenie powinno zostać wykryte.</li>
+<li>Przeciągnij pobrany plik <code>FlappyZiemniakiOS6.ipa</code> do głównego okna programu.</li>
+<li>Kliknij "Start" lub "Install". <i>(Uwaga: W zależności od oprogramowania, urządzenie może wymagać wcześniejszego zrobienia Jailbreaka i instalacji wtyczki <b>AppSync</b> z Cydii, aby ominąć zabezpieczenia starych systemów).</i></li>
+<li>Po zakończeniu procesu wgrywania przez komputer, ikona Flappy Potato (w wersji Halloween) pojawi się na ekranie głównym Twojego urządzenia! Możesz odłączyć kabel.</li>
+</ol>
 
 <h2 id="tech">Aspekty techniczne</h2>
 <ul>
-<li>Ruch w grze jest liczony na klatkę, a nie na czas, więc szybkość gry zależy od stabilności ok. 60 FPS.</li>
+<li>Ruch w grze jest liczony na klatkę, a nie na czas, więc szybkość gry zależy od stabilności ok. 60 FPS. Wersja napisana w Objective-C.</li>
 <li>Kod zawiera przygotowany mechanizm tarczy ochronnej (niebieska poświata), który w obecnej postaci nie jest nigdzie aktywowany.</li>
+<li><b>Rekord</b> („BEST”) jest zapisywany w <code>NSUserDefaults</code> i aktualizowany na bieżąco.</li>
 </ul>
-
-<h2 id="cie">Ciekawostki</h2>
-<ul>
-<li>Nazwa pakietu <code>flappyziemniak</code> pokazuje, że gra pierwotnie nazywała się „Flappy Ziemniak”.</li>
-</ul>
-
-<div class="note">Ten artykuł został opracowany na podstawie kodu źródłowego gry. Nie zawiera dat premiery ani danych o autorze, ponieważ nie wynikają one z kodu.</div>
 
 </main>
-<footer>Strona ma charakter fanowski i jedynie naśladuje wygląd Wikipedii.</footer>
+<footer>© 2026 Flappy Potato. Wszelkie prawa do gry zastrzeżone. Portal oficjalny.</footer>
 </body>
 </html>
