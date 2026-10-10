@@ -43,62 +43,72 @@ footer{border-top:1px solid var(--line);color:var(--mut);font-size:12px;padding:
 <div class="sub">Baza wiedzy i instrukcje instalacji</div>
 
 <table class="info">
-<caption>Flappy Potato (Halloween Edition 🎃)</caption>
-<tr><td colspan="2" class="emo">🥔👻</td></tr>
-<tr><th>Gatunek</th><td>zręcznościowa, endless runner</td></tr>
-<tr><th>Wersja</th><td>1.2 - Spooky Update</td></tr>
+<caption>Flappy Potato (v1.4 + Multiplayer)</caption>
+<tr><td colspan="2" class="emo">🥔🌐</td></tr>
+<tr><th>Gatunek</th><td>zręcznościowa, endless runner, multiplayer</td></tr>
+<tr><th>Wersja</th><td>1.4 - Local Host & Spooky Update</td></tr>
 <tr><th>Platformy</th><td>iOS 6</td></tr>
-<tr><th>Język programowania</th><td>Objective-C</td></tr>
+<tr><th>Język programowania</th><td>Objective-C / Node.js</td></tr>
 <tr><th>Sterowanie</th><td>dotyk / głos (mikrofon) 🗣️</td></tr>
 </table>
 
-<p><b>Flappy Potato</b> – polska gra zręcznościowa inspirowana <i>Flappy Bird</i>, w której gracz steruje ziemniakiem przelatującym między przeszkodami. Gra powstała w klasycznej formie na system iOS 6. Obecnie dostępna w limitowanej, halloweenowej oprawie wizualnej wzbogaconej o nowe mechaniki!</p>
+<p><b>Flappy Potato</b> – polska gra zręcznościowa inspirowana <i>Flappy Bird</i>, w której gracz steruje ziemniakiem przelatującym między przeszkodami. Gra powstała w klasycznej formie na system iOS 6. W wersji 1.4 wprowadzono m.in. obsługę trybu wieloosobowego (berek) oraz możliwość postawienia własnego serwera na <b>Local Host</b>!</p>
 
 <div class="toc"><b>Spis treści</b>
 <ol>
 <li><a href="#roz">Rozgrywka</a></li>
-<li><a href="#halloween">Halloween Update 🎃 - Co nowego?</a></li>
-<li><a href="#ios">Instalacja (PC / Linux / Mac)</a></li>
+<li><a href="#update">Wersja 1.4: Nowości i Local Host (Server)</a></li>
+<li><a href="#ios">Instalacja gry i uruchomienie serwera</a></li>
 <li><a href="#tech">Aspekty techniczne</a></li>
 </ol></div>
 
 <h2 id="roz">Rozgrywka</h2>
 <p>Gracz dotyka ekranu (lub używa głosu!), aby nadać ziemniakowi pęd w górę; w pozostałym czasie postać opada pod wpływem grawitacji. Celem jest przelecenie przez szczeliny między parami przeszkód bez zderzenia z nimi, z podłożem lub z krawędzią ekranu. Za każdą miniętą przeszkodę gracz otrzymuje jeden punkt. Zderzenie kończy rozgrywkę.</p>
 
-<h2 id="halloween">Halloween Update 🎃 - Co nowego?</h2>
+<h2 id="update">Wersja 1.4: Nowości i Local Host (Server) 🌐</h2>
 <div class="halloween-note">
-<b>Trwa wydarzenie Halloweenowe!</b> Zmiany w rozgrywce obowiązują przez cały październik.
+<b>Wielka aktualizacja 1.4!</b> Oprócz klimatycznego Halloween Update, gra zyskała pełne wsparcie dla rozgrywki sieciowej typu BEREK oraz opcję uruchomienia własnego serwera lokalnego!
 </div>
-<p>Z okazji święta duchów, gra otrzymała mroczną i klimatyczną aktualizację wprowadzającą mnóstwo nowych funkcji:</p>
+<p>Wszystkie niezbędne pliki źródłowe oraz wersje instalacyjne znajdziesz w naszym oficjalnym repozytorium na **GitHubie**:</p>
 <ul>
-<li><b>Krzycz, aby latać (Sterowanie Głosowe) 🗣️:</b> Dodano zupełnie nowy, innowacyjny tryb gry! Używając przycisku w menu, możesz przełączyć sterowanie z dotykowego na głosowe. Krzycz do mikrofonu, aby ziemniak podskoczył – im głośniejszy dźwięk, tym wyżej poleci!</li>
-<li><b>Cukierki i Sklep z Postaciami 🍬:</b> Podczas lotu losowo pojawiają się cukierki. Zbieraj je, aby zgromadzić walutę! Za 15 cukierków możesz wylosować w sklepie nowy wygląd swojego ziemniaka.</li>
-<li><b>Mroczne Skiny:</b> Zastąp klasyczną, bazową dynię i odblokuj skina <b>Ducha (👻)</b> lub <b>Zombie (🧟)</b> z charakterystyczną blizną.</li>
-<li><b>Upiorne Efekty Wizualne:</b> Ziemniak podczas lotu zostawia teraz za sobą zanikającą, mroczną smugę (trail effect). Pogodne niebo zastąpiono fioletowo-granatowym mrokiem, a zamiast zwykłych chmurek po niebie przelatują nietoperze, duchy i pajęczyny (🦇, 👻, 🕸️).</li>
-<li><b>Nowe Przeszkody:</b> Rury zyskały mroczną, szaro-pomarańczową kolorystykę pasującą do klimatu.</li>
+<li><b>Plik gry (`FZ1,4.ipa`):</b> Najnowsza wersja aplikacji klienckiej na system iOS 6 zawierająca poprawki oraz obsługę trybu multiplayer.</li>
+<li><b>Serwer (`server.js`):</b> Skrypt w Node.js obsługujący lobby, synchronizację pozycji graczy oraz mechanikę berka w czasie rzeczywistym (20 Hz).</li>
+<li><b>Local Host:</b> Teraz możesz uruchomić serwer gry u siebie na komputerze (w sieci lokalnej Wi-Fi) lub w chmurze, aby grać razem ze znajomymi w tej samej sieci!</li>
 </ul>
+<p><b>Funkcje trybu Berek:</b> Odliczanie przed startem, automatyczne przydzielanie berka, mechanika odporności po złapaniu oraz ranking czasu spędzonego jako berek na koniec rundy.</p>
 
-<h2 id="ios">Instalacja przez komputer (PC / Linux / Mac)</h2>
+<h2 id="ios">Instalacja i Uruchomienie (PC / Linux / Mac)</h2>
 <div class="note" style="border-left-color: #f44336;">
-<b>⚠️ Ważne:</b> Aplikację Flappy Potato można zainstalować <b> przy użyciu komputera z Linux, Windows, MacOS</b>. Nie ma możliwości pobrania i instalacji pliku wprost z przeglądarki na urządzeniu z systemem iOS!
+<b>⚠️ Ważne:</b> Aplikację <code>FZ1,4.ipa</code> można zainstalować <b>przy użyciu komputera (Linux, Windows, macOS)</b>. Nie ma możliwości pobrania i instalacji pliku wprost z przeglądarki na urządzeniu z systemem iOS!
 </div>
 
-<p>Aby zagrać w grę, postępuj zgodnie z poniższym poradnikiem krok po kroku:</p>
+<p><b>Krok 1: Pobranie plików z GitHub</b></p>
 <ol>
-<li>Pobierz plik instalacyjny gry <a href="FlappyZiemniak1,3.ipa" style="font-weight: bold;">SpookyZiemniak1,2.ipa</a> na dysk swojego komputera.</li>
-<li>Pobierz i zainstaluj na komputerze program do wgrywania aplikacji "z boku" (sideloadingu). Najlepszym wyborem dla iOS 6 będzie <b>Sideloadly</b> lub (jeśli posiadasz system macOS) narzędzia wbudowane w program <b>Apple Configurator</b>. Ewentualnie możesz użyć starszych wersji <b>iTools</b> lub <b>3uTools</b>.</li>
-<li>Podłącz swojego iPhone'a / iPada / iPoda z systemem iOS 6 do komputera za pomocą kabla USB.</li>
-<li>Uruchom program instalacyjny na komputerze (np. Sideloadly). Twoje urządzenie powinno zostać wykryte.</li>
-<li>Przeciągnij pobrany plik <code>SpookyZiemniak1,2.ipa</code> do głównego okna programu.</li>
-<li>Kliknij "Start" lub "Install". <i>(Uwaga: W zależności od oprogramowania, urządzenie może wymagać wcześniejszego zrobienia Jailbreaka i instalacji wtyczki <b>AppSync</b> z Cydii, aby ominąć zabezpieczenia starych systemów).</i></li>
-<li>Po zakończeniu procesu wgrywania przez komputer, ikona Flappy Potato (w wersji Halloween) pojawi się na ekranie głównym Twojego urządzenia! Możesz odłączyć kabel.</li>
+<li>Wejdź na nasze repozytorium GitHub i pobierz plik instalacyjny <a href="https://github.com/twoj-profil/flappy-potato" style="font-weight: bold;" target="_blank">FZ1,4.ipa</a> oraz plik serwera <a href="https://github.com/twoj-profil/flappy-potato" style="font-weight: bold;" target="_blank">server.js</a>.</li>
+</ol>
+
+<p><b>Krok 2: Instalacja gry na urządzeniu z iOS 6</b></p>
+<ol>
+<li>Pobierz i zainstaluj na komputerze program do sideloadingu, np. <b>Sideloadly</b> (lub Apple Configurator dla macOS, 3uTools).</li>
+<li>Podłącz swojego iPhone'a / iPada / iPoda z systemem iOS 6 do komputera przez kabel USB.</li>
+<li>Przeciągnij pobrany plik <code>FZ1,4.ipa</code> do głównego okna programu i kliknij "Start" / "Install" (wymagany Jailbreak i wtyczka <b>AppSync</b> w przypadku starszych systemów).</li>
+</ol>
+
+<p><b>Krok 3: Uruchomienie własnego serwera (Local Host)</b></p>
+<ol>
+<li>Upewnij się, że masz zainstalowane środowisko <b>Node.js</b> na komputerze.</li>
+<li>Umieść pobrany plik <code>server.js</code> w folderze na komputerze i w terminalu / wierszu poleceń uruchom komendę:
+<pre><code>node server.js</code></pre>
+*(Opcjonalnie możesz wskazać port: `PORT=4000 node server.js`)*</li>
+<li>Serwer wyświetli adres IP w Twojej sieci lokalnej (np. `192.168.1.50:3000`). Wpisz ten adres w ustawieniach gry na swoim urządzeniu iOS, aby połączyć się z lokalnym hostem!</li>
 </ol>
 
 <h2 id="tech">Aspekty techniczne</h2>
 <ul>
 <li>Ruch w grze jest liczony na klatkę, a nie na czas, więc szybkość gry zależy od stabilności ok. 60 FPS.</li>
-<li>Detekcja dźwięku korzysta z biblioteki <code>AVFoundation</code> i analizuje średnią moc dźwięku w decybelach (od -160 dB do 0 dB), aktywując skok przy przekroczeniu progu -20.0 dB.</li>
-<li><b>Rekord</b> („BEST”), ilość zdobytych cukierków oraz obecnie wybrany skin są zapisywane na stałe w pamięci urządzenia (<code>NSUserDefaults</code>).</li>
+<li>Komunikacja sieciowa serwera <code>server.js</code> bazuje na prostym protokole TCP (JSON na linię zakończoną znakiem <code>\n</code>), dzięki czemu działa bezproblemowo nawet na starym stosie sieciowym iOS 6 (CFStream).</li>
+<li>Detekcja dźwięku korzysta z biblioteki <code>AVFoundation</code> i analizuje średnią moc dźwięku w decybelach.</li>
+<li><b>Rekord</b> („BEST”), ilość zdobytych cukierków oraz wybrane skiny są zapisywane w pamięci urządzenia (<code>NSUserDefaults</code>).</li>
 </ul>
 
 </main>
